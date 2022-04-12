@@ -1,11 +1,35 @@
-let velocity = 101
+let pilotName = prompt("Qual seu nome. Capitão?");
 
-if(velocity < 40){
-    console.log("estamos em uma velocidade aceitavel!");
-} else if(velocity <= 60){
-    console.log("esta em velocidade de risco")
-} else {
-    console.log("velocidade de  risco")
+let velocity = 0;
+
+let newVelocity = prompt("A que velocidade você gostaria de acelerar?");
+
+let confirmVelocity = confirm(
+  "estamos acelerando para " + newVelocity + "Km/s"
+);
+
+if (confirmVelocity) {
+  velocity = newVelocity;
 }
 
-(velocity > 100) ? console.log("velocidade maior que 100") : console.log("velocidade menor que 100")
+console.log(velocity);
+
+if (velocity <= 0) {
+  alert("Nave está parada. Considere partir e aumentar a velocidade");
+} else if (velocity < 40) {
+  alert("você está devagar, Acelera sua Nave Capitão " + pilotName);
+} else if (velocity < 80) {
+  alert("capitão " + pilotName + " parace uma boa velocidade para manter.");
+} else if (velocity < 100) {
+  alert(
+    "capitão " + pilotName + " Atento velocidade alta. considera a diminuir!"
+  );
+} else {
+  alert(
+    "Sr Capitão" +
+      pilotName +
+      "Velocidade perigosa. Controle automático forçado!"
+  );
+}
+ 
+alert ("Sr Capitao: " + pilotName + "\n Velocidade: " + velocity + "Km/s")
