@@ -1,10 +1,43 @@
-let spaceshipName = "SuperNova"
-function changeSpaceshipName(){
-  spaceshipName = "mars"
+//funçoes anonimas
+
+console.log(speedUp(60,10))
+console.log(doubleSpeed(50))
+let doubleSpeed = function (velocity){
+  return velocity * 2
 }
-console.log(spaceshipName)
-changeSpaceshipName()
-console.log(spaceshipName)
+function speedUp(velocity, acceleration){
+  return velocity + acceleration
+}
+
+// function setSpaceshipDeatails(){
+//   let velocity =50
+//   if(velocity == 50){
+//     velocity =60
+//     var spaceshipeName = "newspaceship"
+//     let spaceshipType = "discovery"
+//   }
+//   console.log(velocity)
+//   console.log(spaceshipeName)
+//   console.log(spaceshipType)
+// }
+// setSpaceshipDeatails()
+
+
+// function startSpaceshipVelocity (){
+//   let spaceshipVelocity = 0
+// }
+// startSpaceshipVelocity()
+// console.log(stSpaceshipVelocity)
+
+
+
+// let spaceshipName = "SuperNova"
+// function changeSpaceshipName(){
+//   spaceshipName = "mars"
+// }
+// console.log(spaceshipName)
+// changeSpaceshipName()
+// console.log(spaceshipName)
 
 
 
